@@ -1,0 +1,21 @@
+.auth .brand-logo img {
+    width: 50px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+
+#one{
+    font-size:16px;
+}
+
+#two{
+    font-size:14px;
+}
+
+#three{
+    margin-left:2cm;
+    margin-top: 0.5cm;
+    font-size:12px;
+}
