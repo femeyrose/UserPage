@@ -25,4 +25,4 @@
   $('.aside-toggler').click(function(){
     $('.chat-list-wrapper').toggleClass('slide')
   });
-})(jQuery);
+})

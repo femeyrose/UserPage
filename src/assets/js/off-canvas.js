@@ -5,4 +5,4 @@
       $('.sidebar-offcanvas').toggleClass('active')
     });
   });
-})(jQuery);
+})

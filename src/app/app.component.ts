@@ -1,5 +1,7 @@
 import { Component } from '@angular/core';
 
+
+
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
@@ -7,4 +9,9 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'UserPage';
+
+  // @ViewChild('navdrop', null) navdrop: ElementRef; // Angular Version 8
+ 
+
+  
 }

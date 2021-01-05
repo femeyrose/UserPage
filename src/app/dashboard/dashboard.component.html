@@ -20,25 +20,38 @@
             </form>
         </div>
         <ul class="navbar-nav navbar-nav-right">
-            <li class="nav-item nav-profile dropdown">
-                <a class="nav-link dropdown-toggle" id="profileDropdown" href="#" data-toggle="dropdown"
+            <li class="nav-item nav-profile dropdown" >
+                <a class="nav-link dropdown-toggle" id="profileDropdown"  data-toggle="dropdown"
                     aria-expanded="false">
                     <div class="nav-profile-img">
                         <img src="../../assets/images/sprites/user.webp" alt="image">
                         <span class="availability-status online"></span>
                     </div>
-                    <div class="nav-profile-text">
-                        <p class="mb-1 text-black">David</p>
+                    <div class="nav-profile-text" >
+                        <p onclick="myFunction()" class="dropbtn" >{{user}}</p>
+                        <div id="myDropdown" class="dropdown-content">
+                            <a href="register">Activity Log</a>
+                            <a href="">Sign Out</a>
+                          </div>
                     </div>
                 </a>
-                <div class="dropdown-menu navbar-dropdown" aria-labelledby="profileDropdown">
+                <!-- <div class="dropdown-menu navbar-dropdown" aria-labelledby="profileDropdown" >
+                    <div class="dropdown-content" ></div>
                     <a class="dropdown-item" href="">
                         <i class="mdi mdi-cached mr-2 text-success"></i> Activity Log </a>
                     <div class="dropdown-divider"></div>
                     <a class="dropdown-item" href="">
                         <i class="mdi mdi-logout mr-2 text-primary"></i> Signout </a>
-                </div>
+                </div> -->
             </li>
+
+            <!-- <div class="nav-item nav-profile dropdown">
+                <button onclick="myFunction()" class="dropbtn"></button>
+                <div id="myDropdown" class="dropdown-content">
+                  <a href="#">Activity Log</a>
+                  <a href="#">Sign Out</a>
+                </div>
+              </div> -->
 
 
             <!-- <li class="nav-item d-none d-lg-block full-screen-link">
@@ -158,7 +171,7 @@
    <nav class="sidebar sidebar-offcanvas" id="sidebar">
     <ul class="nav">
        <li class="nav-item nav-profile">
-        <a href="#" class="nav-link">
+        <a href="dash" class="nav-link">
           <div class="nav-profile-image">
             <img src="assets/images/faces/face1.jpg" alt="profile">
             <span class="login-status online"></span> 
@@ -172,7 +185,7 @@
         </a>
       </li> 
       <li class="nav-item">
-        <a class="nav-link" href="index.html">
+        <a class="nav-link" href="dash">
           <span class="menu-title">Dashboard</span>
           <i class="mdi mdi-home menu-icon"></i>
         </a>
@@ -217,19 +230,39 @@
         </a>
       </li> -->
       <li class="nav-item">
-        <a class="nav-link" data-toggle="collapse" href="#general-pages" aria-expanded="false" aria-controls="general-pages">
-          <span class="menu-title">Users</span>
+          <div class="nav-link" data-toggle="collapse" aria-expanded="false" aria-controls="general-pages">
+          <a href="dash"  onclick="myFunction2()" class="dropbtn2" class="menu-title">Users</a>
           <i class="menu-arrow"></i>
           <i class="mdi mdi-medical-bag menu-icon"></i>
-        </a>
-        <div class="collapse" id="general-pages">
-          <ul class="nav flex-column sub-menu">
-            <li class="nav-item"> <a class="nav-link" href="pages/samples/blank-page.html"> Add User </a></li>
-            <li class="nav-item"> <a class="nav-link" href="pages/samples/login.html"> Delete User </a></li>
-            <li class="nav-item"> <a class="nav-link" href="pages/samples/register.html"> Edit User </a></li>
-          </ul>
-        </div>
+          <div  id="myDropdown" class="dropdown-content2">
+            <ul >
+              <li class="nav-item"> <a href=""> Add User </a></li>
+              <li class="nav-item"> <a  href=""> Delete User </a></li>
+              <li class="nav-item"> <a  href=""> Edit User </a></li>
+            </ul>
+          </div>
+           </div>
+
+    <!-- <div class="nav-link" data-toggle="collapse" aria-expanded="false" aria-controls="general-pages">
+        <button onclick="myFunction2()" class="dropbtn2" >Users</button>
+        <div id="myDropdown" class="dropdown-content2">
+            <a href="register">Add Users</a>
+            <a href="">Delete Users</a>
+            <a href="">Edit Users</a>
+          </div>
+    </div> -->
+        
       </li>
+
+      <!-- <div class="nav-link" data-toggle="collapse" aria-expanded="false" aria-controls="general-pages">
+        <button onclick="myFunction2()" class="dropbtn2" >Users</button>
+        <div id="myDropdown" class="dropdown-content2">
+            <a href="register">Add Users</a>
+            <a href="">Delete Users</a>
+            <a href="">Edit Users</a>
+          </div>
+    </div> -->
+
       <!-- <li class="nav-item sidebar-actions"> -->
         <!-- <span class="nav-link">
           <div class="border-bottom">
