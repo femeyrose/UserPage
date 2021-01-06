@@ -57,10 +57,11 @@ export class RegisterComponent implements OnInit {
         password:pass,
 
       });
+       this.dataService.currentUser=email
        this.dataService.saveDetails();
        console.log("current user"+this.dataService.currentUser);
        console.log("after push to array", data)
-       this.router.navigateByUrl("dash");
+       this.router.navigateByUrl("sidebar");
 
     }
 

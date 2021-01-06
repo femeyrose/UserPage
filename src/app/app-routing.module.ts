@@ -3,6 +3,9 @@ import { Routes, RouterModule } from '@angular/router';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import {LoginComponent} from './login/login.component';
 import {RegisterComponent} from './register/register.component';
+import { SidebarComponent } from './sidebar/sidebar.component';
+import { ViewusersComponent } from './viewusers/viewusers.component';
+
 
 const routes: Routes = [
   {
@@ -15,6 +18,14 @@ const routes: Routes = [
   },
   {
     path:'register',component: RegisterComponent,
+  
+  },
+  {
+    path:'sidebar',component:SidebarComponent,
+  
+  },
+  {
+    path:'viewusers',component:ViewusersComponent
   
   },
   

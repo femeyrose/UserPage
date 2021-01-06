@@ -50,7 +50,7 @@ export class LoginComponent implements OnInit {
       this.dataService.currentUser=email
       this.dataService.saveDetails();
       //var username = JSON.parse(localStorage.getItem('this.dataService.currentUser'));
-      this.router.navigateByUrl("dash");
+      this.router.navigateByUrl("sidebar");
 
     } else {
       alert("invalid login")
