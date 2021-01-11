@@ -1,6 +1,25 @@
-/* .btn-primary{
-    width:100px;
-    height:40px;
-    text-align: center;
+#btn_one{
+    
+  padding: 8px 26px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 12px;
+   
 }
- */
+
+#btn_two{
+  padding: 8px 26px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 12px;
+  width:100px;
+}
+
+#btn_three{
+  margin-left:21cm;
+  position:absolute; left:30px; bottom:11cm;
+  
+}
+

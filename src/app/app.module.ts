@@ -9,6 +9,10 @@ import { DashboardComponent } from './dashboard/dashboard.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { SidebarComponent } from './sidebar/sidebar.component';
 import { ViewusersComponent } from './viewusers/viewusers.component';
+import { DataService } from './service/data.service';
+import { SampleComponent } from './sample/sample.component';
+
+
 
 @NgModule({
   declarations: [
@@ -17,7 +21,8 @@ import { ViewusersComponent } from './viewusers/viewusers.component';
     RegisterComponent,
     DashboardComponent,
     SidebarComponent,
-    ViewusersComponent
+    ViewusersComponent,
+    SampleComponent
   ],
   imports: [
     BrowserModule,
@@ -25,7 +30,7 @@ import { ViewusersComponent } from './viewusers/viewusers.component';
     FormsModule,
     ReactiveFormsModule,
   ],
-  providers: [],
+  providers: [DataService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

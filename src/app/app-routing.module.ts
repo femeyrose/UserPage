@@ -5,27 +5,37 @@ import {LoginComponent} from './login/login.component';
 import {RegisterComponent} from './register/register.component';
 import { SidebarComponent } from './sidebar/sidebar.component';
 import { ViewusersComponent } from './viewusers/viewusers.component';
+import {AuthenticationGuard} from './authentication.guard'; 
+import { SampleComponent } from './sample/sample.component';
 
 
 const routes: Routes = [
+  {
+    path:'',redirectTo:"/",pathMatch:'full'
+  
+  },
   {
     path:'',component: LoginComponent,
   
   },
   {
-    path:'dash',component: DashboardComponent,
+    path:'dash',component: DashboardComponent,canActivate:[AuthenticationGuard]
   
   },
   {
-    path:'register',component: RegisterComponent,
+    path:'register',component: RegisterComponent,canActivate:[AuthenticationGuard]
   
   },
   {
-    path:'sidebar',component:SidebarComponent,
+    path:'sidebar',component:SidebarComponent,canActivate:[AuthenticationGuard]
   
   },
   {
-    path:'viewusers',component:ViewusersComponent
+    path:'viewusers',component:ViewusersComponent,canActivate:[AuthenticationGuard]
+  
+  },
+  {
+    path:'sample',component:SampleComponent,
   
   },
   

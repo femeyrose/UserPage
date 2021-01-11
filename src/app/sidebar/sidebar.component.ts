@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
-import { DataService } from '../services/data.service';
+import { DataService } from '../service/data.service';
 
 @Component({
   selector: 'app-sidebar',
@@ -24,5 +24,12 @@ export class SidebarComponent implements OnInit {
 {
    console.log("user"+this.dataService.currentUser)
 }
+
+logout(){
+  this.user="";
+}
+
+
+
 
 }

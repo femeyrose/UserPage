@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, Validators } from '@angular/forms';
 import { Router } from '@angular/router';
-import { DataService } from '../services/data.service';
+import { DataService } from '../service/data.service';
 
 @Component({
   selector: 'app-viewusers',
@@ -71,25 +71,42 @@ export class ViewusersComponent implements OnInit {
     return this.todos
    }
 
-delete(){
+delete(email){
   var data = this.dataService.details;
-  var email = this.deleteForm.value.email
+  //var email = this.deleteForm.value.email
   var pass = this.deleteForm.value.pwd
 
   var users = data.filter(obj => obj.email == email && obj.password == pass);
 
-  for (let items of data) {
-    if (items.email==this.deleteForm.value.email && items.password==this.deleteForm.value.pwd) {
-        data.splice(data.indexOf(items), 1);
-        this.dataService.saveDetails();
-        break;
-    }  
-    else {
-      alert("sorry")  
-      break;  
-  } 
+  // for (let items of data) {
+  //   if (items.email==this.deleteForm.value.email && items.password==this.deleteForm.value.pwd) {
+  //       data.splice(data.indexOf(items), 1);
+  //       this.dataService.saveDetails();
+  //       break;
+  //   }  
+  //   else {
+  //     alert("sorry")  
+  //     break;  
+  // } 
 
-  }
+  // }
+
+  
+    for(let i = 0; i < this.todos.length; ++i){
+        if (this.todos[i].email === email) {
+            this.todos.splice(i,1);
+            this.dataService.saveDetails();
+            alert("User removed successfully")
+            break;
+        }
+        else {
+              alert("sorry")  
+              break;  
+          } 
+    }
+
+
+  
 
 }
 
@@ -97,8 +114,8 @@ edit()
 {
 
   var data = this.dataService.details;
-    var email = this.editForm.value.email
-    var pass = this.editForm.value.pwd
+    var email11 = this.editForm.value.email1
+    var pass11 = this.editForm.value.pwd1
     var name = this.editForm.value.name
     var num = this.editForm.value.num
 
@@ -108,22 +125,47 @@ edit()
     var num2 = this.editForm.value.num2
 
     
-    data.map((item, i) => {
-      if (item.email==this.editForm.value.email1 && item.password==this.editForm.value.pwd1){
-        data[i].name = this.editForm.value.name2;
-        data[i].num = this.editForm.value.num2;
-         data[i].email = this.editForm.value.email2;
-         data[i].password= this.editForm.value.pwd2;
-         this.dataService.saveDetails();
-         alert("user details changed successfully")
-         console.log(data)
-       }
-       else{
-         alert("sorry")
-         console.log(data)
-       }
+    // data.map((item, i) => {
+    //   if (item.email==this.editForm.value.email1 && item.password==this.editForm.value.pwd1){
+    //     data[i].name = this.editForm.value.name2;
+    //     data[i].num = this.editForm.value.num2;
+    //      data[i].email = this.editForm.value.email2;
+    //      data[i].password= this.editForm.value.pwd2;
+    //      this.dataService.saveDetails();
+    //      alert("user details changed successfully")
+    //      console.log(data)
+    //      return true;
+    //    }
+    //    else{
+    //      alert("sorry")
+    //      console.log(data)
+
+    //    }
         
-     });
+    //  });
+
+    var flag=0
+for (var i = 0; i < data.length; i++) {
+  if (data[i].email==this.editForm.value.email1 && data[i].password==this.editForm.value.pwd1) {
+    data[i].name = this.editForm.value.name2;
+    data[i].num = this.editForm.value.num2;
+     data[i].email = this.editForm.value.email2;
+     data[i].password= this.editForm.value.pwd2;
+     this.dataService.saveDetails();
+     console.log(data)
+     flag=1
+    break;
+  }
+ 
+}
+
+if (flag==1){
+  alert("user details changed successfully")
+}
+else{
+  alert("sorry")
+}
+
 
 }
 
@@ -165,7 +207,28 @@ add(){
     // }
 
 
+    // logout() {
+    //   let token = Cookie.get('id_token');
+    //   Cookie.delete('access_token');
+    //   Cookie.delete('id_token');
+    //   let logoutURL = "http://localhost:4200/auth/realms/baeldung/protocol/openid-connect/logout?
+    //     id_token_hint=" + token + "&post_logout_redirect_uri=" + this.redirectUri;
+    
+    //   window.location.href = logoutURL;
+    // }
+    
+    // saveToken(token) {
+    //   var expireDate = new Date().getTime() + (1000 * token.expires_in);
+    //   Cookie.set("access_token", token.access_token, expireDate);
+    //   Cookie.set("id_token", token.id_token, expireDate);
+    //   this.router.navigate(["/"]);
+    // }
 
+
+}
+
+logout(){
+  this.dataService.currentUser=""
 }
 
 }

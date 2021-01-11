@@ -30,6 +30,9 @@ export class DataService {
     }
   }
 
+  gettoken(){
+    return !!localStorage.getItem("seesionUser")
+  }
 //   getUsername() {
 //     return JSON.parse(localStorage.getItem('currentUser')).email;
 // }

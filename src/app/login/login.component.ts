@@ -3,7 +3,7 @@ import { isDefined } from '@angular/compiler/src/util';
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, Validators } from '@angular/forms';
 import { Router } from '@angular/router';
-import { DataService } from '../services/data.service';
+import { DataService } from '../service/data.service';
 
 @Component({
   selector: 'app-login',
@@ -14,6 +14,8 @@ export class LoginComponent implements OnInit {
 
   email = ""
   pwd = ""
+
+  user='1'
 
   loginForm = this.fb.group({
     email: ['', [Validators.required]],
@@ -26,7 +28,7 @@ export class LoginComponent implements OnInit {
     private router: Router) { }
 
   ngOnInit(): void {
-    
+    localStorage.setItem('seesionUser',this.user)
   }
 
 
