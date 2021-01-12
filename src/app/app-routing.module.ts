@@ -7,6 +7,8 @@ import { SidebarComponent } from './sidebar/sidebar.component';
 import { ViewusersComponent } from './viewusers/viewusers.component';
 import {AuthenticationGuard} from './authentication.guard'; 
 import { SampleComponent } from './sample/sample.component';
+import { TestComponent } from './test/test.component';
+import { TopbarComponent } from './topbar/topbar.component';
 
 
 const routes: Routes = [
@@ -38,6 +40,15 @@ const routes: Routes = [
     path:'sample',component:SampleComponent,
   
   },
+  {
+    path:'test',component:TestComponent,
+  
+  },
+  {
+    path:'top',component:TopbarComponent,
+  
+  },
+  
   
 ];
 

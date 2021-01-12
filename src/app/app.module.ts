@@ -11,6 +11,8 @@ import { SidebarComponent } from './sidebar/sidebar.component';
 import { ViewusersComponent } from './viewusers/viewusers.component';
 import { DataService } from './service/data.service';
 import { SampleComponent } from './sample/sample.component';
+import { TestComponent } from './test/test.component';
+import { TopbarComponent } from './topbar/topbar.component';
 
 
 
@@ -22,7 +24,9 @@ import { SampleComponent } from './sample/sample.component';
     DashboardComponent,
     SidebarComponent,
     ViewusersComponent,
-    SampleComponent
+    SampleComponent,
+    TestComponent,
+    TopbarComponent
   ],
   imports: [
     BrowserModule,
