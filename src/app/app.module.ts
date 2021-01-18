@@ -13,6 +13,7 @@ import { DataService } from './service/data.service';
 import { SampleComponent } from './sample/sample.component';
 import { TestComponent } from './test/test.component';
 import { TopbarComponent } from './topbar/topbar.component';
+import { Weather1Component } from './weather1/weather1.component';
 
 
 
@@ -26,7 +27,8 @@ import { TopbarComponent } from './topbar/topbar.component';
     ViewusersComponent,
     SampleComponent,
     TestComponent,
-    TopbarComponent
+    TopbarComponent,
+    Weather1Component
   ],
   imports: [
     BrowserModule,

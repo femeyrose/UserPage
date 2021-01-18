@@ -9,6 +9,7 @@ import {AuthenticationGuard} from './authentication.guard';
 import { SampleComponent } from './sample/sample.component';
 import { TestComponent } from './test/test.component';
 import { TopbarComponent } from './topbar/topbar.component';
+import { Weather1Component } from './weather1/weather1.component';
 
 
 const routes: Routes = [
@@ -46,6 +47,10 @@ const routes: Routes = [
   },
   {
     path:'top',component:TopbarComponent,
+  
+  },
+  {
+    path:'wea',component:Weather1Component,
   
   },
   

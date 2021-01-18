@@ -18,8 +18,44 @@
 }
 
 #btn_three{
-  margin-left:21cm;
-  position:absolute; left:30px; bottom:11cm;
+ 
+  padding:7px 15px;
+  margin-left:850px;
+  margin-top:58px; 
   
 }
+
+.mrgn-top{
+margin:98px 9px;
+}
+
+.page-body-wrapper{
+background-color:aliceblue;
+}
+
+.card-title{
+  padding:12px;
+  margin-block-end: -85px;
+}
+
+#form-one{
+  margin-left: 96px;
+}
+
+#footer{
+  margin-right: -12px;
+}
+
+#exampleModalLabel1{
+font-size:14px;
+}
+
+
+
+
+
+
+
+
+
 

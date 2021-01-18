@@ -61,7 +61,7 @@ export class RegisterComponent implements OnInit {
        this.dataService.saveDetails();
        console.log("current user"+this.dataService.currentUser);
        console.log("after push to array", data)
-       this.router.navigateByUrl("sidebar");
+       this.router.navigateByUrl("test");
 
     }
 

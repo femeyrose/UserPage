@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
+import { DataService } from '../service/data.service';
 
 @Component({
   selector: 'app-topbar',
@@ -7,9 +9,18 @@ import { Component, OnInit } from '@angular/core';
 })
 export class TopbarComponent implements OnInit {
 
-  constructor() { }
+  constructor(private dataService: DataService,
+    private router: Router) { }
 
   ngOnInit(): void {
+    this.getdetails()
   }
+
+  user=this.dataService.currentUser
+
+  getdetails()
+{
+   console.log("user"+this.dataService.currentUser)
+}
 
 }

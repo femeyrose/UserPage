@@ -52,7 +52,7 @@ export class LoginComponent implements OnInit {
       this.dataService.currentUser=email
       this.dataService.saveDetails();
       //var username = JSON.parse(localStorage.getItem('this.dataService.currentUser'));
-      this.router.navigateByUrl("sidebar");
+      this.router.navigateByUrl("test");
 
     } else {
       alert("invalid login")

@@ -23,6 +23,15 @@
 .error{
     color:red;
     font-size:12px;
-    margin-left:0.25cm;
+    margin-left:-7px;
+    padding:10px
     
+}
+
+#check{
+    font-size:13.5px;
+}
+
+.content-wrapper{
+    background-color:peachpuff;
 }

@@ -11893,7 +11893,8 @@ code {
       padding-top: 1rem; }
   .card .card-title {
     color: #343a40;
-    margin-bottom: 3.0rem;
+    margin-bottom: 0cm;
+    margin-left:0.25cm
     text-transform: capitalize;
     font-family: "ubuntu-medium", sans-serif;
     font-size: 1.125rem; }
@@ -13377,6 +13378,6 @@ dl {
 
 /*# sourceMappingURL=style.css.map */
 
-.mt-dashboard{
+.mrgn-top{
   margin-top: 69px;
 }
