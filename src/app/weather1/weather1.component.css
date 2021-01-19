@@ -1,9 +1,19 @@
 .page-body-wrapper{
     background-color: aliceblue;
 }
-.container-fluid{
+.container-fluid {
     margin-bottom:317px;
+   margin-top: -5px;
+   background-color: #f2edf3 !important;
+   
 }
+
+/* .navbar .navbar-expand-lg .navbar-light .bg-light{
+    background-color:aliceblue  !important;
+
+} */
+  
+
 
 .nav-link{
     font-size:12px;
@@ -22,21 +32,130 @@
 
 }
 
-/* #one{
-    
-        text-decoration: none;
-        border-bottom: #EA215A 0.125em solid;
-    
-} */
+#image{
+    margin:0px 12px 0 0;
+    height:77px;
+    margin-bottom: 174px;
+}
 
-    
 
-    
-    
 a:active, a:visited,a:hover {
     text-decoration: underline;
     text-decoration-color:solid red
-    } 
+    }  
+
+
+.card{
+    margin-top:-294px;
+}
+
+nav{
+    width: 60%;
+    float: right;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+nav ul{
+    width: 60%;
+}
+
+nav ul li {
+    float: left;
+    width: 18%;
+    line-height: 20px;
+    text-align: center;
+    
+}
+
+#temp1{
+    font-size: 82px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-left: -76px;
+    margin-bottom: 142px;
+}
+
+#celcius{
+    font-size:24px;
+}
+
+
+.forecast-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 24px;
+    flex-grow: 1;
+}
+
+.line{
+    border-bottom: inset;
+}
+
+.temp-container{
+    margin-top:-19px;
+    margin-right:2px;
+    margin-bottom: 182px;
+}
+
+.real-feel{
+    margin-top:-167px;
+    margin-left:-71px;
+}
+#lineone{
+    margin-top:33px;
+}
+
+#time{
+    margin-top:-14px;
+    font-size: 14px;
+}
+
+.lines {
+    margin-bottom: 10px;
+    font-family:Arial, Helvetica, sans-serif;
+
+}
+
+#sunny{
+margin-top:-129px;
+font-family:Arial, Helvetica, sans-serif;
+
+}
+
+#more{
+    margin-top:15px;
+    font-family:Arial, Helvetica, sans-serif;
+    margin-left:45px;
+
+}
+#current{
+    font-family:Arial, Helvetica, sans-serif;
+    font-size:16px ;
+}
+#poor{
+    color:red;
+}
+
+.real{
+    margin-left:-12px
+}
+
+.rtwo{
+    margin-left:100px;
+}
+
+.navLink  {
+    font-size:14px;
+    
+}
+
+
+
+
 
 
 
