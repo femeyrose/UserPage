@@ -1,0 +1,484 @@
+#content{
+    display:grid;  
+    grid-template-columns: repeat(4,1fr);
+    grid-auto-rows:minmax(6%,auto);
+    
+    margin:0 auto;   
+    /* grid-gap:2px; */
+    /* width: 58%; */
+    margin-right: 40%;
+    margin-top: 7%;
+    /* height: max-content; */
+    width: 60%;
+
+    grid-template-areas:
+    "one one two two"
+    "thre thre two two"
+    "four fiv sev eig"
+    "four fiv nin ten"
+    "four six ele twe"
+    "four six thir fourt"
+    "fif fif sixt sixt"
+    "fif fif sixt sixt";
+}
+
+#image{
+    height:36%;
+    /* margin-left:20%; */
+}
+#temp1{
+    font-size:72px;
+}
+#celcius{
+    font-size:14px;
+    align-items: center;
+    margin-top: 64px;
+    margin-left: -9px;
+}
+/* .real-feel{
+    margin-left: -116%;
+    margin-top: -26%;
+} */
+
+/* .real{
+    margin-left: -78%;
+} */
+
+/* .line{
+    border-bottom: inset;
+    row-gap: 10px;
+} */
+/* #current{
+    margin-left: 10px;
+}
+#time{
+    margin-left: 10px;
+}
+#sunny{
+    margin-left: 10px;
+} */
+
+#content div{
+    background:white;
+    padding:-1px;  
+    display: flex;
+}
+#one{
+    grid-area:one;
+}
+#two{
+    grid-area:two;
+}
+#thre{
+    grid-area:thre;
+}
+#four{
+    grid-area:four;
+}
+#fiv{
+    grid-area:fiv;
+    /* margin: -70px;
+    padding-top: 58px;
+    margin-left: -118%; */
+}
+#six{
+    grid-area:six;
+}
+#sev{
+    grid-area:sev;
+}
+#eig{
+    grid-area:eig;
+}
+#nin{
+    grid-area:nin;
+}
+#ten{
+    grid-area:ten;
+}
+#ele{
+    grid-area:ele;
+}
+#twe{
+    grid-area:twe;
+}
+#thir{
+    grid-area:thir;
+}
+#fourt{
+    grid-area:fourt;
+}
+#fif{
+    grid-area:fif;
+}
+#sixt{
+    grid-area:sixt;
+}
+
+/* card 1 */
+#content2{ 
+    display:grid;  
+    grid-template-columns: 100px 110px ;
+   
+    grid-template-rows:30px 50px 10px;
+    
+   
+    padding: 0px;
+    margin: 0px;  
+    grid-gap:0px;
+    margin-right: 40%;
+    margin-top: 2%;
+    width: 70%;
+    height:120px;
+
+    grid-template-areas:
+    "on on on2 on2"
+    "on on on3 on3"
+    "on on on3 on3"
+    "on on on4 on4";
+    
+}
+#content2 div{
+    background:white;
+    padding:-1px;  
+    display: flex;
+    grid-template-columns: 200px 400px;
+    grid-template-rows: 80px 100px 10px;
+    
+   
+}
+#on{
+    grid-area:on;
+    width: 100%;
+}
+#on2{
+    grid-area:on2;
+    font-size:11px;
+    font-family: Arial, Helvetica, sans-serif;
+    color:#f05514;
+    align-items: flex-end;
+
+}
+#con1{
+    font-size:20px;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+#con2{
+    font-size:20px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top:0px;
+
+}
+#on3{
+    grid-area:on3;
+    font-size:24px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+#on4{
+    grid-area:on4;
+    font-size:10px;
+    font-family: Arial, Helvetica, sans-serif;
+    align-items: flex-end;
+}
+
+#head{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* .card{
+    margin-top: 15px;
+    margin-left: 10px; 
+     width: 64%;
+    height: 63%; 
+ }    */
+
+
+ /* card 2 */
+
+ #content3{ 
+    display:grid;  
+    grid-template-columns: 100px 110px ;
+   
+    grid-template-rows:30px 50px 10px;
+    
+    
+    padding: 0px;
+    margin: 0px;  
+    grid-gap:0px;
+    margin-right: 40%;
+    margin-top: 2%;
+    width: 70%;
+    height:120px;
+
+    grid-template-areas:
+    "tw tw tw2 tw2"
+    "tw tw tw3 tw3"
+    "tw tw tw3 tw3"
+    "tw tw tw4 tw4";
+    
+}
+#content3 div{
+    background:white;
+    padding:-1px;  
+    display: flex;
+    grid-template-columns: 200px 400px;
+    grid-template-rows: 80px 100px 10px;
+    
+   
+}
+#tw{
+    grid-area:tw;
+    width: 100%;
+}
+#image3{
+    width:92%;
+}
+#tw2{
+    grid-area:tw2;
+    font-size:11px;
+    font-family: Arial, Helvetica, sans-serif;
+    color:#f05514;
+    align-items: flex-end;
+
+}
+#cont{
+    font-size:20px;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+#tw3{
+    grid-area:tw3;
+    font-size:24px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+#tw4{
+    grid-area:tw4;
+    font-size:10px;
+    font-family: Arial, Helvetica, sans-serif;
+    align-items: flex-end;
+}
+
+
+/* card 3 */
+#content4{ 
+    display:grid;  
+    grid-template-columns: 100px 110px ;
+   
+    grid-template-rows:30px 50px 10px;
+    
+    /* margin:0 auto;  */
+    padding: 0px;
+    margin: 0px;  
+    grid-gap:0px;
+    margin-right: 40%;
+    margin-top: 2%;
+    width: 70%;
+    height:120px;
+
+    grid-template-areas:
+    "th th th2 th2"
+    "th th th3 th3"
+    "th th th3 th3"
+    "th th th4 th4";
+    
+}
+#content4 div{
+    background:white;
+    padding:-1px;  
+    display: flex;
+    grid-template-columns: 200px 400px;
+    grid-template-rows: 80px 100px 10px;
+    
+   
+}
+#th{
+    grid-area:th;
+    width: 100%;
+}
+#image4{
+    width:92%;
+}
+#th2{
+    grid-area:th2;
+    font-size:11px;
+    font-family: Arial, Helvetica, sans-serif;
+    color:#f05514;
+    align-items: flex-end;
+
+}
+#cont2{
+    font-size:20px;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+#th3{
+    grid-area:th3;
+    font-size:24px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+#th4{
+    grid-area:th4;
+    font-size:10px;
+    font-family: Arial, Helvetica, sans-serif;
+    align-items: flex-end;
+}
+
+/* card 4 */
+#content5{ 
+    display:grid;  
+    grid-template-columns: 100px 110px ;
+   
+    grid-template-rows:30px 50px 10px;
+    
+    /* margin:0 auto;  */
+    padding: 0px;
+    margin: 0px;  
+    grid-gap:0px;
+    margin-right: 40%;
+    margin-top: 2%;
+    width: 70%;
+    height:120px;
+
+    grid-template-areas:
+    "fo fo fo2 fo2"
+    "fo fo fo3 fo3"
+    "fo fo fo3 fo3"
+    "fo fo fo4 fo4";
+    
+}
+#content5 div{
+    background:white;
+    padding:-1px;  
+    display: flex;
+    grid-template-columns: 200px 400px;
+    grid-template-rows: 80px 100px 10px;
+    
+   
+}
+#fo{
+    grid-area:fo;
+    width: 100%;
+}
+#image5{
+    width:90%;
+}
+#fo2{
+    grid-area:fo2;
+    font-size:11px;
+    font-family: Arial, Helvetica, sans-serif;
+    color:#f05514;
+    align-items: flex-end;
+
+}
+#cont3{
+    font-size:20px;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+#fo3{
+    grid-area:fo3;
+    font-size:24px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+#fo4{
+    grid-area:fo4;
+    font-size:10px;
+    font-family: Arial, Helvetica, sans-serif;
+    align-items: flex-end;
+}
+
+
+/* card 5 */
+#content6{ 
+    display:grid;  
+    grid-template-columns: 100px 110px ;
+    grid-template-rows:30px 50px 10px;
+    padding: 0px;
+    margin: 0px;  
+    grid-gap:0px;
+    margin-right: 40%;
+    margin-top: 5%;
+    width: 70%;
+    height:120px;
+
+    grid-template-areas:
+    "fi fi fi2 fi2"
+    "fi fi fi3 fi3"
+    "fi fi fi3 fi3"
+    "fi fi fi4 fi4";
+    
+}
+#content6 div{
+    background:white;
+    padding:-1px;  
+    display: flex;
+    grid-template-columns: 200px 400px;
+    grid-template-rows: 80px 100px 10px;
+    
+   
+}
+#fi{
+    grid-area:fi;
+    width: 100%;
+}
+#image6{
+    width:92%;
+}
+#fi2{
+    grid-area:fi2;
+    font-size:11px;
+    font-family: Arial, Helvetica, sans-serif;
+    color:#f05514;
+    align-items: flex-end;
+
+}
+#cont4{
+    font-size:20px;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+#fi3{
+    grid-area:fi3;
+    font-size:24px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+#fi4{
+    grid-area:fi4;
+    font-size:10px;
+    font-family: Arial, Helvetica, sans-serif;
+    align-items: flex-end;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

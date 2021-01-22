@@ -1,0 +1,86 @@
+/* card 1 */
+.content{ 
+    display:grid;  
+    grid-template-columns: 100px 110px ;
+   
+    grid-template-rows:30px 50px 10px;
+    
+   
+    padding: 0px;
+    margin: 0px;  
+    grid-gap:0px;
+    margin-right: 40%;
+    margin-top: 2%;
+    width: 70%;
+    height:120px;
+
+    grid-template-areas:
+    "on on on2 on2"
+    "on on on3 on3"
+    "on on on3 on3"
+    "on on on4 on4";
+    
+}
+.content div{
+    background:white;
+    padding:-1px;  
+    display: flex;
+    grid-template-columns: 200px 400px;
+    grid-template-rows: 80px 100px 10px;
+    
+   
+}
+.on{
+    grid-area:on;
+    width: 100%;
+}
+.on2{
+    grid-area:on2;
+    font-size:11px;
+    font-family: Arial, Helvetica, sans-serif;
+    color:#f05514;
+    align-items: flex-end;
+
+}
+.con1{
+    font-size:20px;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+.on3{
+    grid-area:on3;
+    font-size:24px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.on4{
+    grid-area:on4;
+    font-size:10px;
+    font-family: Arial, Helvetica, sans-serif;
+    align-items: flex-end;
+}
+
+#head{
+    font-family: Arial, Helvetica, sans-serif;
+}
+.image{
+    width:95%;
+}
+#head2{
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 22px;
+}
+
+#head3{
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 22px;
+}
+
+#eig{
+    margin-top: 36px;
+}
+#img{
+height:120px;
+}
+
+

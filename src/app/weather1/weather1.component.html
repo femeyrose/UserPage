@@ -1,146 +1,272 @@
 <body>
     <div class="container-scroller">
-      <!-- partial:partials/_navbar.html -->
-     <app-topbar></app-topbar>
-      <!-- partial -->
-      <div class="container-fluid page-body-wrapper">
-        <!-- partial:partials/_sidebar.html -->
-        <app-sidebar></app-sidebar>
+        <!-- partial:partials/_navbar.html -->
+        <app-topbar></app-topbar>
         <!-- partial -->
+        <div class="container-fluid page-body-wrapper">
+            <!-- partial:partials/_sidebar.html -->
+            <app-sidebar></app-sidebar>
+            <!-- partial -->
 
 
-<!-- main body -->
+            <!-- main body -->
 
-<div class="main-panel">
-    <div class="content-wrapper mrgn-top">
-      <div class="row" id="proBanner">
-      
-        <nav class="container-fluid navbar navbar-expand-lg navbar-light bg-light row">
-          <div class="col-sm-9">
-              <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                  <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                    <li class="nav-item">
-                      <a class="nav-link active navLink" aria-current="page" href="wea">NOW</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link navLink" href="wea" id="one">HOURLY</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link navLink" href="wea">DAILY</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link navLink" href="wea">RADAR</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link navLink" href="wea">MONTHLY</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link navLink" href="wea">AIR QUALITY</a>
-                    </li>
-                    
-                  </ul>
+            <div class="main-panel">
+                <div class="content-wrapper mrgn-top">
+                    <div class="row" id="proBanner">
+
+                        <nav class="container-fluid navbar navbar-expand-lg navbar-light bg-light row">
+                            <div class="col-sm-9">
+                                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                                        <li class="nav-item ">
+                                            <a class="nav-link active navLink" aria-current="page" href="wea">NOW</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link  navLink" href="wea" id="one">HOURLY</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link  navLink" href="wea">DAILY</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link navLink" href="wea">RADAR</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link navLink" href="wea">MONTHLY</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link navLink" href="wea">AIR QUALITY</a>
+                                        </li>
+
+                                    </ul>
+                                </div>
+                            </div>
+                        </nav>
+
+                        <!-- CARD 1 -->
+
+                        <div class="row">
+                            <div class="col-sm-9">
+                                <div class="card">
+                                    <div class="card-body">
+                                        <div class="row">
+                                            <div class="col-sm-6">
+                                                <p id="current"> <b>CURRENT WEATHER </b></p>
+                                                <P id="time">3.45 PM</P>
+                                                <div class="forecast-container row">
+                                                    <div class="col-sm">
+                                                        <img src="assets/images/sun.svg" alt="profile" id="image">
+                                                    </div>
+                                                    <div class="temp-container col-sm-5 ">
+                                                        <div class="temp" id="temp1">28&#xB0;
+                                                            <span class="after-temp"
+                                                                id="celcius">C</span></div>
+                                                        <div class="real-feel">
+                                                            RealFeel&#xAE;
+                                                            31&#xB0;
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <p id="sunny"><b>Sunny</b></p>
+
+                                            </div>
+
+                                            <div class="col-sm-6">
+                                                <div class="row line lines rone" id="lineone">
+                                                    <div class="col-sm-5">
+                                                        <span class="label real">RealFeel Shade&#x2122;</span>
+
+                                                    </div>
+                                                    <div class="col-sm lines rtwo">
+                                                        <span class="value"> <b>27&#xB0;</b></span>
+
+                                                    </div>
+                                                </div>
+                                                <div class="row line lines rone">
+                                                    <div class="col-sm-5">
+                                                        <span class="label real">Air Quality</span>
+
+                                                    </div>
+                                                    <div class="col-sm lines rtwo">
+                                                        <span class="value" id="poor"><b>Poor</b></span>
+
+                                                    </div>
+                                                </div>
+
+                                                <div class="row line lines rone">
+                                                    <div class="col-sm-5">
+                                                        <span class="label real">Wind</span>
+
+                                                    </div>
+                                                    <div class="col-sm lines rtwo">
+                                                        <span class="value"><b>E 10 km/h</b></span>
+
+                                                    </div>
+                                                </div>
+
+                                                <div class="row">
+                                                    <div class="col-sm-5 lines rone">
+                                                        <span class="label real">Wind Gusts</span>
+
+                                                    </div>
+                                                    <div class="col-sm lines rtwo">
+                                                        <span class="value"><b>16 km/h</b></span>
+
+                                                    </div>
+                                                </div>
+
+
+                                                <div class="row">
+                                                    <div class="col-sm-5">
+
+                                                    </div>
+                                                    <div class="col-sm">
+                                                        <p id="more"> <b>MORE DETAILS <i class="fa fa-arrow-right"
+                                                                    aria-hidden="true"></i></b></p>
+
+
+                                                    </div>
+                                                </div>
+
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- CARD 2 -->
+
+                        <div class="row" id="secRow">
+                            <div class="col-sm-9">
+                                <div class="card" id="card2">
+                                    <div class="card-body">
+
+                                        <div class="row">
+                                            <div class="col-md-7">
+                                                <p id="todays"><b> TODAY'S WEATHER FORECAST </b></p>
+                                            </div>
+                                            <div class="col">
+                                                <p id="oneby"> 1/20 </p>
+                                            </div>
+                                        </div>
+
+                                        <div class="row">
+                                            <div class="col-sm-2">
+                                                <img src="assets/images/sun2.svg" alt="profile" id="image2">
+                                            </div>
+                                            <div class="col-sm-3">
+                                                <div class="temp-container">
+                                                    <div class="temp" id="three">33&#xB0;<span class="after-temp" id="hi">Hi</span></div>
+                                                    <div class="real-feel" id="feel">RealFeel&#xAE; 34&#xB0;</div>
+                                                </div>
+                                            </div>
+                                            <div class="col" id="ph">
+                                                <p class="phrase">Mostly sunny and very warm</p>
+                                            </div>
+                                            <div class="col">
+                                                <i class="fa fa-arrow-right" aria-hidden="true" id="ar"></i>
+                                            </div>
+                                        </div>
+
+
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                         
+                        <!-- CARD 3 -->
+
+                        <div class="row" id="thridRow">
+                            <div class="col-sm-9">
+                                <div class="card" id="card3">
+                                    <div class="card-body">
+                                        <div class="row">
+                                            <div class="col-md-7">
+                                                <p id="todays2"> <b>TONIGHT'S WEATHER FORECAST </b></p>
+                                            </div>
+                                            <div class="col">
+                                                <p id="oneby2"> 1/20 </p>
+                                            </div>
+                                        </div>
+
+                                        <div class="row">
+                                            <div class="col-sm-2">
+                                                <img src="assets/images/moon.svg" alt="profile" id="image3">
+                                            </div>
+                                            <div class="col-sm-3">
+                                                <div class="temp-container">
+                                                    <div class="temp" id="three2">17&#xB0;<span class="after-temp" id="hi2">Lo</span></div>
+                                                    <div class="real-feel" id="feel2">RealFeel&#xAE; 17&#xB0;</div>
+                                                </div>
+                                            </div>
+                                            <div class="col" id="ph2">
+                                                <p class="phrase">Clear</p>
+                                            </div>
+                                            <div class="col">
+                                                <i class="fa fa-arrow-right" aria-hidden="true" id="ar2"></i>
+                                            </div>
+                                        </div>
+
+
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <!-- CARD 4 -->
+                        <div class="row" id="fourRow">
+                            <div class="col-sm-9">
+                                <div class="card" id="card4">
+                                    <div class="card-body">
+                                        <div class="row">
+                                            <div class="col-md-7">
+                                                <p id="tomorrow"> <b>TOMORROW'S'S WEATHER FORECAST </b></p>
+                                            </div>
+                                            <div class="col">
+                                                <p id="oneby21"> 1/21 </p>
+                                            </div>
+                                        </div>
+
+                                        <div class="row">
+                                            <div class="col-sm-2">
+                                                <img src="assets/images/sun.svg" alt="profile" id="image4">
+                                            </div>
+                                            <div class="col-sm-3">
+                                                <div class="temp-container">
+                                                    <div class="temp" id="three3">35&#xB0;<span class="after-temp" id="hi3">/18&#xB0;</span></div>
+                                                    <div class="real-feel" id="feel3">RealFeel&#xAE; 35&#xB0;</div>
+                                                </div>
+                                            </div>
+                                            <div class="col" >
+                                                <p class="phrase" id="ph3">Very warmth with plenty of sun</p>
+                                            </div>
+                                            <div class="col">
+                                                <i class="fa fa-arrow-right" aria-hidden="true" id="ar3"></i>
+                                            </div>
+                                        </div>
+
+
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+
+
+
+                    </div>
                 </div>
-      </div>
-    </nav>
-
-      <div class="row">
-        <div class="col-sm-9">
-          <div class="card">
-              <div class="card-body">
-                  <div class="row">
-                  <div class="col-sm-6">
-                      <p id="current"> <b>CURRENT WEATHER </b></p>
-                      <P id="time">3.45 PM</P>
-                          <div class="forecast-container row">
-                          <div class="col-sm">
-                      <img src="assets/images/sun.svg" alt="profile" id="image">
-                  </div>
-                      <div class="temp-container col-sm-5 ">
-                          <div class="temp" id="temp1">28&#xB0;<span class="after-temp" id="celcius">C</span></div>
-                          <div class="real-feel">
-                              RealFeel&#xAE;
-                              31&#xB0;
-                          </div>
-                      </div>
-                  </div>
-                  <p id="sunny"><b>Sunny</b></p>
-              
-                  </div>
-  
-                  <div class="col-sm-6">
-                  <div class="row line lines rone"  id="lineone">
-                      <div class="col-sm-5">
-                          <span class="label real">RealFeel Shade&#x2122;</span>
-                
-                      </div>
-                      <div class="col-sm lines rtwo">
-                          <span class="value"> <b>27&#xB0;</b></span>
-                  
-                      </div>
-                  </div>
-                  <div class="row line lines rone">
-                      <div class="col-sm-5">
-                          <span class="label real">Air Quality</span>
-                
-                      </div>
-                      <div class="col-sm lines rtwo">
-                          <span class="value" id="poor"><b>Poor</b></span>
-                  
-                      </div>
-                  </div>
-                     
-                  <div class="row line lines rone">
-                      <div class="col-sm-5">
-                          <span class="label real">Wind</span>
-                
-                      </div>
-                      <div class="col-sm lines rtwo">
-                          <span class="value"><b>E 10 km/h</b></span>
-                  
-                      </div>
-                  </div>
-                  
-                  <div class="row">
-                      <div class="col-sm-5 lines rone">
-                          <span class="label real">Wind Gusts</span>
-                
-                      </div>
-                      <div class="col-sm lines rtwo">
-                          <span class="value"><b>16 km/h</b></span>
-                  
-                      </div>
-                  </div>
-  
-  
-                  <div class="row">
-                      <div class="col-sm-5">
-                      
-                      </div>
-                      <div class="col-sm">
-                          <p id="more"> <b>MORE DETAILS <i class="fa fa-arrow-right" aria-hidden="true"></i></b></p>
-                          
-                  
-                      </div>
-                  </div>
-               
-  
-                  </div>
-                  </div>
-                </div>
-              </div>
             </div>
-              </div>
 
+            <!-- ends main body -->
 
         </div>
-        </div>
-        </div>
-
-        <!-- ends main body -->
-
+        <!-- page-body-wrapper ends -->
     </div>
-    <!-- page-body-wrapper ends -->
-  </div>
-  
-</body>
 
+    <script src="assets/js/link.js"></script>
+</body>

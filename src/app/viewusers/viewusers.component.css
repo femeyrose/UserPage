@@ -5,6 +5,9 @@
   text-decoration: none;
   display: inline-block;
   font-size: 12px;
+  background-color: lightgray;
+  border: none;
+  color: black;
    
 }
 
@@ -15,13 +18,20 @@
   display: inline-block;
   font-size: 12px;
   width:100px;
+  background-color: lightgray;
+  border: none;
+  color: black;
 }
 
 #btn_three{
  
   padding:7px 15px;
-  margin-left:850px;
+  margin-left:825px;
   margin-top:58px; 
+  background-color: lightgray;
+  border: none;
+  color: black;
+  font-size:14px;
   
 }
 

@@ -4,15 +4,9 @@
 .container-fluid {
     margin-bottom:317px;
    margin-top: -5px;
-   background-color: #f2edf3 !important;
+   background-color:aliceblue !important;
    
 }
-
-/* .navbar .navbar-expand-lg .navbar-light .bg-light{
-    background-color:aliceblue  !important;
-
-} */
-  
 
 
 .nav-link{
@@ -32,9 +26,13 @@
 
 }
 
+.navbar-nav .navLink.active  {
+   border-bottom: 1px solid #f05514;
+}
+
 #image{
     margin:0px 12px 0 0;
-    height:77px;
+    height:78px;
     margin-bottom: 174px;
 }
 
@@ -42,7 +40,14 @@
 a:active, a:visited,a:hover {
     text-decoration: underline;
     text-decoration-color:solid red
-    }  
+    } 
+
+/* a:active {
+   text-decoration: underline;
+   color: red;
+   background-color: hotpink;
+
+    }  */
 
 
 .card{
@@ -79,7 +84,9 @@ nav ul li {
 }
 
 #celcius{
-    font-size:24px;
+    font-size:18px;
+    margin-left:-53px;
+    color: #878787;
 }
 
 
@@ -104,6 +111,7 @@ nav ul li {
 .real-feel{
     margin-top:-167px;
     margin-left:-71px;
+    font-family:Arial, Helvetica, sans-serif;
 }
 #lineone{
     margin-top:33px;
@@ -135,6 +143,8 @@ font-family:Arial, Helvetica, sans-serif;
 #current{
     font-family:Arial, Helvetica, sans-serif;
     font-size:16px ;
+    
+    
 }
 #poor{
     color:red;
@@ -146,12 +156,192 @@ font-family:Arial, Helvetica, sans-serif;
 
 .rtwo{
     margin-left:100px;
+    font-family:Arial, Helvetica, sans-serif;
 }
 
 .navLink  {
     font-size:14px;
     
 }
+
+#secRow{
+    margin-top:315px;
+
+}
+
+#todays{
+    margin-left: -28px;
+    margin-top: -32px;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+#oneby{
+    margin-top: -32px;
+    margin-left: 232px;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+#image2{
+    margin: 0px 12px 0 0;
+    height: 70px;
+}
+
+#three{
+    font-size: 70px;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+#hi{
+    font-size: 17px;
+    margin-left:-25px;
+    color: #878787;
+    font-family:Arial, Helvetica, sans-serif;
+}
+#feel{
+    margin-top: -3px;
+    margin-left:10px;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+#ar{
+    margin-left: 187px;
+    margin-top:53px;
+
+}
+#ph{
+    margin-top:60px;
+    margin-right: -49px;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+#card2{
+    height:200px;
+}
+
+/* next card */
+#thridRow{
+    margin-top:221px;
+
+}
+
+#todays2{
+    margin-left: -28px;
+    margin-top: -32px;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+#oneby2{
+    margin-top: -32px;
+    margin-left: 232px;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+#image3{
+    margin: 0px 12px 0 0;
+    height: 70px;
+}
+
+#three2{
+    font-size: 70px;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+#hi2{
+    font-size: 17px;
+    margin-left:-31px;
+    color: #878787;
+    font-family:Arial, Helvetica, sans-serif;
+}
+#feel2{
+    margin-top: -3px;
+    margin-left:10px;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+#ar2{
+    margin-left: 187px;
+    margin-top:53px;
+
+}
+#ph2{
+    margin-top:60px;
+    margin-right: -49px;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+#card3{
+    height:200px;
+}
+
+
+/* next card */
+#fourRow{
+    margin-top:221px;
+    
+
+}
+
+#tomorrow{
+    margin-left: -28px;
+    margin-top: -32px;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+#oneby21{
+    margin-top: -32px;
+    margin-left: 232px;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+#image4{
+    margin: 0px 12px 0 0;
+    height: 70px;
+}
+
+#three3{
+    font-size: 70px;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+#hi3{
+    font-size: 17px;
+    margin-left:-25px;
+    color: #878787;
+    font-family:Arial, Helvetica, sans-serif;
+}
+#feel3{
+    margin-top: -3px;
+    margin-left:10px;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+#ar3{
+    margin-left: 187px;
+    margin-top:53px;
+
+}
+#ph3{
+    margin-top:60px;
+    margin-right: -49px;
+    margin-left:-5px;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+#card4{
+    height:200px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

@@ -10,6 +10,9 @@ import { SampleComponent } from './sample/sample.component';
 import { TestComponent } from './test/test.component';
 import { TopbarComponent } from './topbar/topbar.component';
 import { Weather1Component } from './weather1/weather1.component';
+import { Weather2Component } from './weather2/weather2.component';
+import { Weather4Component } from './weather4/weather4.component';
+import { Weather3Component } from './weather3/weather3.component';
 
 
 const routes: Routes = [
@@ -53,7 +56,18 @@ const routes: Routes = [
     path:'wea',component:Weather1Component,
   
   },
+  {
+    path:'wea2',component:Weather2Component,
   
+  },
+  {
+    path:'wea3',component:Weather3Component,
+  
+  },
+  {
+    path:'wea4',component:Weather4Component,
+  
+  },
   
 ];
 

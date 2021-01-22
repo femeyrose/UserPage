@@ -14,6 +14,9 @@ import { SampleComponent } from './sample/sample.component';
 import { TestComponent } from './test/test.component';
 import { TopbarComponent } from './topbar/topbar.component';
 import { Weather1Component } from './weather1/weather1.component';
+import { Weather2Component } from './weather2/weather2.component';
+import { Weather3Component } from './weather3/weather3.component';
+import { Weather4Component } from './weather4/weather4.component';
 
 
 
@@ -28,7 +31,10 @@ import { Weather1Component } from './weather1/weather1.component';
     SampleComponent,
     TestComponent,
     TopbarComponent,
-    Weather1Component
+    Weather1Component,
+    Weather2Component,
+    Weather3Component,
+    Weather4Component
   ],
   imports: [
     BrowserModule,
